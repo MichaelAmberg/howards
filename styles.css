@@ -1,0 +1,150 @@
+/* setting the background color and text color, as well as margin */
+body {
+    margin: 0;
+    background-color: lightblue;
+    color: black;  
+  }
+  
+  /* container is for the header */
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* container1 is for lake image with text over it */
+  .container1 {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+  /* the text class that goes over the lake picture */
+  .allignment {
+    position: absolute;
+    top: 3em;
+    left: 50%;
+    transform: translate(-50%, -50%); /* moves the text across x, y, and z axis*/
+  }
+
+  /* spaces out skip links */
+  #skip {
+    margin-left: 1em;
+  }
+
+  /* spaces out first skip link seperately */
+  #skip1 {
+    margin-left: 25em;
+  }
+
+  header {
+    background-color: black;
+    position: sticky;
+    top: 0;
+    border-color: rgb(42, 180, 169);
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-width: 0.2em;
+  }
+  
+  /* pushes things after the header */
+  header::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  
+  /* navigation */
+  nav {
+    float: right;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    padding-top: 25px;
+  }
+  
+  nav a {
+    color:green;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 9em;
+    
+  }
+  
+  nav a:hover {
+    color: greenyellow;
+  }
+  
+  /* for the contact information */
+  footer {
+    background-color: green;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 6em;
+  }
+  
+  /* header tags */
+  h1, h2, h3 {
+    color: green;
+    text-shadow: 3px 3px 10px rgb(71, 167, 209);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: x-large;
+    text-decoration: underline;
+  }
+  
+  /* paragraphs */
+  p {
+    text-align: center;
+    font-style: italic;
+    font-family: none;
+    color: black;
+  }
+  
+  /* 3 photos wide */
+  .column {
+    float: left;
+    width: 28%;
+    padding: 2em;
+    padding-bottom: 3em;
+    margin-left: 0;
+  }
+
+    /* 2 photos wide */
+  .two {
+    float: left;
+    width: 33%;
+    padding: 0;
+    padding-left: 8em;
+    padding-bottom: 7em;
+    margin-left: 0;
+  }
+  
+  /* makes sure footer is below images */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .spool {
+    margin-left: 36%;
+  }
+
+  
+
+  
